@@ -52,16 +52,16 @@ export default function Home() {
       <AnimatedBackground />
       
       {/* Hero Section */}
-      <section className="relative py-20 px-4">
+      <section className="relative py-4 px-4">
         <div className="max-w-6xl mx-auto text-center">
-          <h1 className="text-5xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-green-600 to-blue-600">
+          <h1 className="text-5xl leading-relaxed font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-green-600 to-blue-600">
             Bot WhatsApp para tu Negocio
           </h1>
           <p className="text-2xl text-gray-600 mb-8">Automatiza tus ventas y trabaja 80% menos mientras aumentas tus cierres en un 30%</p>
           <img 
             src="/waVapeBot/img/800x400.jpeg" 
             alt="Dashboard WhatsApp" 
-            className="rounded-lg shadow-xl mb-8 mx-auto"
+            className="max-w-4/5 rounded-lg shadow-xl mb-8 mx-auto"
           />
           <button className="bg-gradient-to-r from-green-500 to-green-600 text-white px-8 py-4 rounded-full text-xl font-semibold hover:from-green-600 hover:to-green-700 transition-all hover:scale-105">
             ¡Comienza Ahora!
