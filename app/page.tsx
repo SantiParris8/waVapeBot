@@ -57,7 +57,7 @@ export default function Home() {
           <h1 className="text-5xl leading-relaxed font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-green-600 to-blue-600">
             Bot WhatsApp para tu Negocio
           </h1>
-          <p className="text-2xl text-gray-600 mb-8">Automatiza tus ventas y trabaja 80% menos mientras aumentas tus cierres en un 30%</p>
+          <p className="text-2xl text-gray-600 mb-4">Automatiza tus ventas y trabaja 80% menos mientras aumentas tus cierres en un 30%</p>
           <img 
             src="/waVapeBot/img/800x400.jpeg" 
             alt="Dashboard WhatsApp" 
