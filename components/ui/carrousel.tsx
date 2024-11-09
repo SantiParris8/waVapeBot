@@ -11,7 +11,6 @@ const ImageCarousel = ({ fileNames }: ImageCarouselProps) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const images = fileNames.map(fileName => `/waVapeBot/img/${fileName}`);
 
-  // Only start carousel after component mounts on client
   useEffect(() => {
     setMounted(true);
     
@@ -24,21 +23,20 @@ const ImageCarousel = ({ fileNames }: ImageCarouselProps) => {
     return () => clearInterval(timer);
   }, [images.length]);
 
-  // Show first image during SSG, prevent hydration mismatch
   if (!mounted) {
     return (
-      <div className="relative w-[400px] h-[600px] overflow-hidden">
+      <div className="relative w-[400px] h-[600px] overflow-hidden rounded-lg">
         <img
           src={images[0]}
           alt="Demo WhatsApp 1"
-          className="absolute top-0 left-0 min-w-[400px] min-h-[600px] object-cover object-center"
+          className="absolute top-0 left-0 min-w-[400px] min-h-[600px] object-cover object-left rounded-lg"
         />
       </div>
     );
   }
 
   return (
-    <div className="relative w-[400px] h-[600px] overflow-hidden">
+    <div className="relative w-[400px] h-[600px] overflow-hidden rounded-lg">
       {images.map((img, index) => (
         <img
           key={img}
@@ -47,7 +45,8 @@ const ImageCarousel = ({ fileNames }: ImageCarouselProps) => {
           className={`
             absolute top-0 left-0
             min-w-[400px] min-h-[600px]
-            object-cover object-center
+            object-cover object-left
+            rounded-lg
             transition-all duration-500 ease-in-out
             ${currentIndex === index ? 
               'opacity-100 translate-x-0' : 
