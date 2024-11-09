@@ -59,7 +59,7 @@ export default function Home() {
           </h1>
           <p className="text-2xl text-gray-600 mb-8">Automatiza tus ventas y trabaja 80% menos mientras aumentas tus cierres en un 30%</p>
           <img 
-            src="/api/placeholder/800/400" 
+            src="/img/800x400.jpeg" 
             alt="Dashboard WhatsApp" 
             className="rounded-lg shadow-xl mb-8 mx-auto"
           />
@@ -146,12 +146,12 @@ export default function Home() {
           <h2 className="text-3xl font-bold mb-8">Mira cómo funciona</h2>
           <div className="grid md:grid-cols-2 gap-8">
             <img 
-              src="/api/placeholder/400/600" 
+              src="/img/400x600.png" 
               alt="Demo WhatsApp 1" 
               className="rounded-lg shadow-md hover:shadow-xl transition-all hover:scale-105"
             />
             <img 
-              src="/api/placeholder/400/600" 
+              src="/img/400x600.png" 
               alt="Demo WhatsApp 2" 
               className="rounded-lg shadow-md hover:shadow-xl transition-all hover:scale-105"
             />
