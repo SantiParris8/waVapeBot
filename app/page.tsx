@@ -61,7 +61,7 @@ export default function Home() {
           <img 
             src="/waVapeBot/img/800x400.jpeg" 
             alt="Dashboard WhatsApp" 
-            className="max-w-4/5 rounded-lg shadow-xl mb-8 mx-auto"
+            className="w-4/5 rounded-lg shadow-xl mb-8 mx-auto"
           />
           <button className="bg-gradient-to-r from-green-500 to-green-600 text-white px-8 py-4 rounded-full text-xl font-semibold hover:from-green-600 hover:to-green-700 transition-all hover:scale-105">
             ¡Comienza Ahora!
