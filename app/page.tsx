@@ -142,22 +142,22 @@ export default function Home() {
 
       {/* Demo Section */}
       <section className="py-16 px-4 bg-white/80 backdrop-blur-sm">
-        <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-8">Mira cómo funciona</h2>
-          <div className="grid md:grid-cols-2 gap-8">
-            <img 
-              src="/waVapeBot/img/400x600.png" 
-              alt="Demo WhatsApp 1" 
-              className="rounded-lg shadow-md hover:shadow-xl transition-all hover:scale-105"
-            />
-            <img 
-              src="/waVapeBot/img/400x600.png" 
-              alt="Demo WhatsApp 2" 
-              className="rounded-lg shadow-md hover:shadow-xl transition-all hover:scale-105"
-            />
-          </div>
-        </div>
-      </section>
+  <div className="max-w-6xl mx-auto text-center">
+    <h2 className="text-3xl font-bold mb-8">Mira cómo funciona</h2>
+    <div className="grid md:grid-cols-2 gap-8 place-items-center">
+      <img 
+        src="/waVapeBot/img/400x600.png" 
+        alt="Demo WhatsApp 1" 
+        className="rounded-lg shadow-md hover:shadow-xl transition-all hover:scale-105 mx-auto"
+      />
+      <img 
+        src="/waVapeBot/img/400x600.png" 
+        alt="Demo WhatsApp 2" 
+        className="rounded-lg shadow-md hover:shadow-xl transition-all hover:scale-105 mx-auto"
+      />
+    </div>
+  </div>
+</section>
     </div>
   );
 }
