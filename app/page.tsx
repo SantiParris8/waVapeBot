@@ -1,4 +1,5 @@
 import { Card } from "@/components/ui/card"
+import  ImageCarousel  from "@/components/ui/carrousel"
 import { MessageSquare, Timer, TrendingUp, Settings, HeartHandshake, Shield } from 'lucide-react'
 
 const AnimatedBackground = () => (
@@ -145,11 +146,11 @@ export default function Home() {
   <div className="max-w-6xl mx-auto text-center">
     <h2 className="text-3xl font-bold mb-8">Mira cómo funciona</h2>
     <div className="grid md:grid-cols-2 gap-8 place-items-center">
-      <img 
-        src="/waVapeBot/img/400x600.png" 
-        alt="Demo WhatsApp 1" 
-        className="rounded-lg shadow-md hover:shadow-xl transition-all hover:scale-105 mx-auto"
-      />
+    <div className="rounded-lg shadow-md hover:shadow-xl transition-all hover:scale-105 mx-auto">
+  <ImageCarousel 
+    fileNames={['6.png', '5.png', '4.png', '3.png', '2.png', '1.png']}
+  />
+</div>
       <img 
         src="/waVapeBot/img/400x600.png" 
         alt="Demo WhatsApp 2" 
